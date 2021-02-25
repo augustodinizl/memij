@@ -73,7 +73,7 @@ body {
             transform: translate(-1284px -847px) scale(0.5);
             
    
-    position: relative;
+    position: absolute;
     z-index: 0;
 }
 
