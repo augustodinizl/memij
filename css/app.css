@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "DIN-Textos";
+    src: url("../fontes/dinrg.ttf");
+}
+@font-face {
+    font-family: "DIN-Titulos";
+    src: url("../fontes/dinbd.ttf");
+}
+
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 1080px;
+    height: 1920px;
+    background: #000;
+    margin: 0;
+    text-align: center;
+}
+
+#txt-intro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#txt-padding {
+    position: absolute;
+    /*top: 1000px;*/
+    top: 500px;
+    margin: 0 160px;
+    padding: 20px 40px;
+    background: rgba(85,61,46,0.8);
+}
+#txt-padding p {
+    font-family: "DIN-Textos";
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    color: #e9ddd3;
+}
+
+
+
+#mapa-container {
+    width: 100%;
+    height: 100%;
+}
+
+#mapa-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: #5a4029;*/
+    background: url(../img/mapa-overlay-tile.png);
+    opacity: 0.5;
+    z-index: 10;
+}
+
+#mapa {
+    width: 4301px; /*7965px;*/
+    height: 4481px;
+    
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transition: -webkit-transform 2s;
+            transition: transform 2s;
+    -webkit-transform: translate(-1284px -847px) scale(0.5); /* museu a 0.5 de scale */
+            transform: translate(-1284px -847px) scale(0.5);
+            
+   
+    position: relative;
+    z-index: 0;
+}
+
+#marcadores {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#marcadores .marcador {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #cc0000;
+    color: #fff;
+    font-family: 'DIN-Textos';
+    /*border: 1px solid #fff;*/
+    /*border-radius: 3px;*/
+    padding-top: 3px;
+    /*box-shadow: 5px 3px 6px 0px rgba(255, 255, 255, 1);*/
+}
+
+#area-imagens {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 1020px;
+    height: 860px;
+    z-index: 1000;
+    text-align: center;
+    /*border: 2px dashed #ff7f00;*/
+}
+
+#area-imagens img {
+    vertical-align: middle;
+    border: 10px solid #fff;
+}
+
+#marcador {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 20;
+    background-image: url(../img/mapa-cursor-laranja.png);
+}
+
+.balao {
+    position: absolute;
+    top: calc(50% + 80px);
+    left: calc(50% - 250px);
+    width: 500px;
+    z-index: 1000;
+}
+.balao-ancora {
+    position: relative;
+    left: 175px;
+    width: 60px;
+    height: 179px;
+    background: url(../img/balao-ancora.png);
+}
+
+.balao-conteudo {
+    padding: 25px;
+    background: #ff7f00;
+    border-radius: 10px;
+}
+
+.balao-titulo {
+    text-align: left;
+    font-family: 'DIN-Titulos';
+    font-size: 24px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.balao-texto {
+    text-align: left;
+    font-family: 'DIN-Textos';
+    font-size: 18px;
+    color: #000;
+}

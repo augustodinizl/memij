@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.example.application.settings"
+    version="0.4.2">
+
+    <name>Application Settings</name>
+    <description>My Application's Default Settings</description>
+    <license>Proprietary</license>
+    <keywords>preferences, settings, default</keywords>
+    <repo></repo>
+
+    <platform name="ios">    
+        <resource-file src="Settings.bundle" />
+    </platform>
+</plugin>

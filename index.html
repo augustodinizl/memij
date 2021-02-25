@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>Bom Retiro</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+    <div id="mapa-container">
+        <div id="mapa-overlay"></div>
+        <img id="mapa" src="img/mapa.jpg">
+        <div id="marcadores"></div>
+    </div>
+    
+    <div id="txt-intro">
+        <div id="txt-padding">
+            <p>O Bom Retiro está localizado entre os rios Tietê e Tamanduateí, na zona central de S. Paulo. No século XIX, a área era constituída por chácaras, como a Chácara do Bom Retiro, que lhe deu o nome. O Jardim da Luz data de 1825, mas a urbanização do bairro só se iniciou a partir de 1860, com o estabelecimento de olarias que aproveitavam a argila das margens dos rios e com a abertura de uma tecelagem.</p>
+            <p>O desenvolvimento do Bom Retiro foi alavancado pela instalação da Estrada de Ferro S. Paulo Railway (depois Santos-Jundiaí), em 1867. A proximidade da ferrovia fez com que depósitos e indústrias se fixassem na região, assim como a primeira Hospedaria dos Imigrantes, depois transferida para o Brás. Um bairro operário formou-se em torno da Estação da Luz e, ao longo do século XX, tornou-se local de acolhida para imigrantes de várias procedências. Não por acaso, a Rua José Paulino chamou-se Rua dos Imigrantes até 1916. </p>
+            <p>Os primeiros imigrantes que ali se instalaram foram os italianos, atraídos pela demanda de mão de obra nas indústrias e pela política brasileira de subsídio à imigração, no final do século XIX. Os judeus começaram a chegar antes da Primeira Guerra Mundial, embora a maioria tenha vindo em seguida, entre 1920 e 1947. Aportaram ainda, no bairro, portugueses, sírios, libaneses e gregos. No final da década de 1960, foi a vez dos coreanos e, mais recentemente, dos latino-americanos. </p>
+            <p>Na maquete interativa, você terá informações sobre alguns pontos importantes do Bom Retiro para os imigrantes judeus. A planta utilizada como referência data da década de 1930.</p>
+        </div>
+    </div>
+    
+    <script type="text/template" id="tpl-balao">
+        <div class="balao">
+            <div class="balao-ancora"></div>
+            <div class="balao-conteudo">
+                <h1 class="balao-titulo"></h1>
+                <div class="balao-texto"></div>
+            </div>
+        </div>
+    </script>
+    
+    <div id="area-imagens"></div>
+    
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

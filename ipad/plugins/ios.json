@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<preference name=\"Fullscreen\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HiddenStatusbarOverlay\"><param name=\"ios-package\" value=\"APPHiddenStatusbarOverlay\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AppPreferences\"><param name=\"ios-package\" value=\"AppPreferences\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIStatusBarHidden": [
+                        {
+                            "xml": "<true />",
+                            "count": 1
+                        }
+                    ],
+                    "UIViewControllerBasedStatusBarAppearance": [
+                        {
+                            "xml": "<false />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "de.appplant.cordova.plugin.hidden-statusbar-overlay": {
+            "PACKAGE_NAME": "br.com.base7.mij.maquete"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "br.com.base7.mij.maquete"
+        },
+        "me.apla.cordova.app-preferences": {
+            "PACKAGE_NAME": "br.com.base7.mij.maquete"
+        },
+        "com.example.application.settings": {
+            "PACKAGE_NAME": "br.com.base7.mij.maquete"
+        }
+    },
+    "dependent_plugins": {}
+}

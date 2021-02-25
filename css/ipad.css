@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "DIN-Textos";
+    src: url("../fontes/dinrg.ttf");
+}
+@font-face {
+    font-family: "DIN-Titulos";
+    src: url("../fontes/dinbd.ttf");
+}
+
+*, img {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #593F28;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #3e2d1d;
+    z-index: 1000;
+}
+
+header.detalhe,
+header.lista {
+    background: #3e2d1d url(../img/icone-voltar.png) no-repeat scroll 30px 24px;
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    font-family: 'DIN-Textos';
+    font-size: 21px;
+    color: #eee;
+}
+#intro #txt-padding {
+    padding: 20px;
+}
+
+#intro #iniciar {
+    display: block;
+    width: 300px;
+    padding: 16px 32px;
+    border: 0;
+    background: #ff7f00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 80px auto 0 auto;
+}
+
+#header-lista, #header-detalhe {
+    font-family: 'DIN-Textos';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 24px 0 0 0;
+}
+
+header.lista #header-detalhe { display: none; }
+header.detalhe #header-lista { display: none; }
+
+#lista, #detalhe {
+    position: absolute;
+    top: 70px;
+    width: 768px;
+    height: 954px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; 
+    background: url(../img/mapa-overlay-tile.png);
+    -webkit-transition: left display 1s;
+            transition: left display 1s;
+}
+
+#lista.out { left: -768px; display: none;}
+#lista.in { left: 0px; }
+#detalhe.out { left: 768px; display: none; }
+#detalhe.in { left: 0px; }
+
+#lista ul {
+    margin: 0;
+    padding: 0;
+}
+
+#lista li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 30px 210px;
+    color: #ff7f00;
+    font-family: 'DIN-Textos';
+    font-size: 18px;
+    line-height: 1.2;
+    border-bottom: 1px dotted #fff;
+    min-height: 150px;
+    transition: background-color 0.5s;
+    background-color: rgba(89, 63, 40, 0);
+}
+
+#lista li.selecionado {
+    background-color: rgba(89, 63, 40, 1.0); /*rgba(120, 80, 45, 1.0);*/
+}
+
+#lista li h1 {
+    position: absolute;
+    left: 150px;
+    top: 30px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #ff7f00;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+} 
+
+#lista li h2 { 
+    max-width: 390px;
+    margin: 0;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#lista li .imagem {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#detalhe { left: 100%; }
+#detalhe-container { padding: 0 30px; }
+
+#detalhe h1 {
+    font-family: 'DIN-Textos';
+    font-size: 32px;
+    line-height: 1.2;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    color: #ff7f00;
+    clear: both;
+}
+
+#detalhe img { float: left; padding: 0 30px 30px 0;}
+
+#detalhe .texto {
+    font-family: 'DIN-Textos';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    float: left;
+    width: 470px;
+    margin-top: -6px;
+}
