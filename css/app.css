@@ -62,8 +62,7 @@ body {
 }
 
 #mapa {
-    width: 3871px; /*7965px;*/
-    height: 4033px;
+    width: 100%; /*7965px;*/
    
     position: relative;
     z-index: 0;
