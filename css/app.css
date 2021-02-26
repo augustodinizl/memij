@@ -62,8 +62,8 @@ body {
 }
 
 #mapa {
-    width: 4301px; /*7965px;*/
-    height: 4481px;
+    width: 3871px; /*7965px;*/
+    height: 4033px;
     
     -webkit-transform-origin: top left;
             transform-origin: top left;
