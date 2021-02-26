@@ -69,8 +69,8 @@ body {
             transform-origin: top left;
     -webkit-transition: -webkit-transform 2s;
             transition: transform 2s;
-    -webkit-transform: translate(-1284px -847px) scale(0.2); /* museu a 0.5 de scale */
-            transform: translate(-1284px -847px) scale(0.2);
+    -webkit-transform: translate(-284px -847px) scale(0.2); /* museu a 0.5 de scale */
+            transform: translate(-284px -847px) scale(0.2);
             
    
     position: relative;
