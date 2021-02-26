@@ -18,8 +18,8 @@ var imagem = {
 };
 
 var centroInicial = {
-    x: 1108,
-    y: 1976
+    x: 108,
+    y: 976
 }
 
 var posicao;
